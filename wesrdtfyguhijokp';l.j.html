@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Musical Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #00ff99;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5vw;
+      background: radial-gradient(circle at center, #0f0f0f, #000000);
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://source.unsplash.com/1600x900/?music,abstract') center/cover no-repeat;
+      filter: blur(10px);
+      z-index: -1;
+    }
+    h1 {
+      font-size: 6rem;
+      color: #00ffcc;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: #44ffc6;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .section {
+      padding: 5vw;
+      border-top: 1px solid #00ff99;
+    }
+    .section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #66ffc4;
+      animation: slideUp 1s ease-out forwards;
+    }
+    .section p {
+      max-width: 900px;
+      color: #b9ffe9;
+      animation: fadeIn 4s ease-in-out forwards;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+      animation: fadeIn 5s ease-in-out forwards;
+    }
+    .link-box {
+      border: 1px solid #00ff99;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .link-box:hover {
+      background-color: #00ff99;
+      color: #000;
+    }
+    .link-box a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: block;
+      transition: all 0.2s ease;
+    }
+    .link-box a:hover {
+      color: #000;
+      text-shadow: 0 0 10px #00ff99;
+    }
+    footer {
+      padding: 4vw;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #00ff99;
+      animation: fadeIn 6s ease-in-out forwards;
+    }
+    @keyframes slideUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Musical Experience</h1>
+  <h2>Reimagining Music Through Imperfection and Tactile Design</h2>
+</header>
+
+<section class="section">
+  <h3>Project Vision</h3>
+  <p>
+    In the digital age, sound is flattened and sterilized. This interactive project explores how texture, imperfection, and materiality can be reintroduced into music through experimental UI and sensory design.
+  </p>
+</section>
+
+<section class="section">
+  <h3>Interviews & Research</h3>
+  <div class="links">
+    <div class="link-box">
+      <a href="https://docs.google.com/document/d/1-RB-3ULeIoootWnzndUgotVCAeKnG0x6wJBya6FN1-k/edit?usp=sharing" target="_blank">Interview – Part 1</a>
+    </div>
+    <div class="link-box">
+      <a href="https://docs.google.com/document/d/1ltIL7HNG9YQWvaFkkSPq86y0-3iMfuOhGtsfLg3dWho/edit?usp=sharing" target="_blank">Interview – Part 2</a>
+    </div>
+    <div class="link-box">
+      <a href="https://docs.google.com/document/d/1ctbHHtft1lqde0xLS4JHKpca_Bca5m5wZTjEF-JADWI/edit?usp=sharing" target="_blank">Interview Summary</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Design & Strategy Documents</h3>
+  <div class="links">
+    <div class="link-box">
+      <a href="https://drive.google.com/file/d/1zH9ckV9vRdFX2NsPxW7S3SAErNbxpAJS/view?usp=sharing" target="_blank">Design Brief</a>
+    </div>
+    <div class="link-box">
+      <a href="https://drive.google.com/file/d/19QRBB8I5Fd9ZJaMk2eHS5gBng2G4yVWQ/view?usp=sharing" target="_blank">Secondary Research</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h3>External Media & References</h3>
+  <div class="links">
+    <div class="link-box">
+      <a href="https://www.wjx.cn/vm/hD2YIG0.aspx#" target="_blank">Musical Experience Survey</a>
+    </div>
+    <div class="link-box">
+      <a href="https://youtu.be/07oZHDgPiqo?si=WzUV56ADkN_Q25aT" target="_blank">Interviewee’s Band Album List</a>
+    </div>
+    <div class="link-box">
+      <a href="https://www.youtube.com/shorts/wdix5Xg_kkU" target="_blank">Experimental Music Comparison</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Designed by Chloe Deng | Interaction Design | University of Sydney | 2025
+</footer>
+
+</body>
+</html>
